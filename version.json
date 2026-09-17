@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
-  "downloadUrl": "https://cdn.jsdelivr.net/gh/soyuangfifi/image-bed@main/superhuatie-20260917d.apk",
-  "note": "顶头 + 关于卡 logo 替换为「优化图标设计.jpg」；保留双击返回 / 50px 间距 / 检查更新 / 公众号二维码"
+  "version": "1.0.5",
+  "downloadUrl": "https://cdn.jsdelivr.net/gh/soyuangfifi/image-bed@main/superhuatie-20260917e.apk",
+  "note": "修复侧边抽屉标题被状态栏时间遮挡、页面内容被头部遮挡两处布局问题"
 }
