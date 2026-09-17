@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
-  "downloadUrl": "https://cdn.jsdelivr.net/gh/soyuangfifi/image-bed@main/superhuatie-20260917e.apk",
-  "note": "修复侧边抽屉标题被状态栏时间遮挡、页面内容被头部遮挡两处布局问题"
+  "version": "1.0.6",
+  "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
+  "note": "修复检查更新点击下载 404/无法下载（改走系统浏览器下载+稳定链接）"
 }
