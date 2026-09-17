@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "修复检查更新点击下载 404/无法下载（改走系统浏览器下载+稳定链接）"
+  "note": "底部导航远离手势提示线、回到顶部按钮移到导航栏上方不再遮挡"
 }
