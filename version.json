@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
-  "downloadUrl": "https://cdn.jsdelivr.net/gh/soyuangfifi/image-bed@main/superhuatie-20260917b.apk",
-  "note": "连续两次返回才退出 + 头部与状态栏间距改为 50px + 设置页检查更新/公众号二维码"
+  "version": "1.0.3",
+  "downloadUrl": "https://cdn.jsdelivr.net/gh/soyuangfifi/image-bed@main/superhuatie-20260917c.apk",
+  "note": "修复左上角标题被状态栏图标压住（移动顶栏加 50px 状态栏安全区），保留双击返回/主区间距/检查更新"
 }
