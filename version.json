@@ -1,5 +1,5 @@
 {
-  "version": "1.0.12",
+  "version": "1.0.13",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "关于页联名 logo 改为横排：logo 在左、POWERED BY / SUPER STICKY NOTE × TUGO 两行文字在右"
+  "note": "修复底部导航\"点了没反应\"（通知层遮挡中间两个按键）+ 资产图片点击即放大查看（双击/双指缩放）"
 }
