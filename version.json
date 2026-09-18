@@ -1,5 +1,5 @@
 {
-  "version": "1.0.18",
+  "version": "1.0.19",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "修复对话页摄像机拍照（UID 权限错误）：改用 FileProvider 私有缓存文件，相机拍完稳定可读；版本号同步 1.0.18"
+  "note": "新增下载水印开关（superhuatie 水印，Canvas 绘制）；对话页可从资产选择图片；修复资产页图片下载（Canvas 水印 + 原生桥兜底）；版本号同步 1.0.19"
 }
