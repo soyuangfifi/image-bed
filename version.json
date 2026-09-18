@@ -1,5 +1,5 @@
 {
   "version": "1.0.15",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "修复放大层「参考图/链接/关键词/移动」四键点击无响应（refBtn 未声明导致后续接线全部未执行）；生图模型升级 Agnes-Image-2.5-Flash（默认），尺寸档位 1K/2K/3K/4K，新增 21:9 宽高比，兼容 2.1 模型"
+  "note": "对话页新增拍照上传（原生相机，AI 看图回答）；安装包版本号 versionCode/versionName 同步关于页 1.0.15"
 }
