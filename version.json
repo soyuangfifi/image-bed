@@ -1,5 +1,5 @@
 {
-  "version": "1.0.25",
+  "version": "1.0.26",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.25 新增原生 saveImage 桥：生成图/资产图下载直接写入系统相册「超级画贴」文件夹（Android 10+ 走 MediaStore 免权限），全程不跳转浏览器；保留 <a download> 与 openInBrowser 兜底。登录链路无改动，已无头 E2E 验证。"
+  "note": "v1.0.26 OTA 升级改为 APP 内下载安装：原生 startOtaUpdate 桥后台线程下载 APK 到缓存，进度经 window.otaProgress 回传网页，下载完走 FileProvider content:// URI + ACTION_INSTALL_PACKAGE 调起系统安装器，全程不跳浏览器；Android 8+ 未授权安装未知应用时用 ACTION_MANAGE_APP 引导去设置页开启。保留 openInBrowser 兜底。登录链路无改动，已无头 E2E 验证。"
 }
