@@ -1,5 +1,5 @@
 {
-  "version": "1.0.14",
+  "version": "1.0.15",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "恢复资产页图片全部原有功能（重绘/参考图/下载/链接/关键词/移动/删除）并放进放大层；原生层接管 JS confirm/prompt，删除等二次确认不再静默失效"
+  "note": "修复放大层「参考图/链接/关键词/移动」四键点击无响应（refBtn 未声明导致后续接线全部未执行）；生图模型升级 Agnes-Image-2.5-Flash（默认），尺寸档位 1K/2K/3K/4K，新增 21:9 宽高比，兼容 2.1 模型"
 }
