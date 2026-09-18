@@ -1,5 +1,5 @@
 {
-  "version": "1.0.24",
+  "version": "1.0.25",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.24 修复登录无法解锁（真正根因：资产页 onclick 内中文单引号未转义 → 主 script 块整体 SyntaxError → 登录按钮从未接线）。另在登录页新增独立 script 块的「下载最新版」入口，即使主脚本再出错也不会被彻底锁在登录页外。"
+  "note": "v1.0.25 新增原生 saveImage 桥：生成图/资产图下载直接写入系统相册「超级画贴」文件夹（Android 10+ 走 MediaStore 免权限），全程不跳转浏览器；保留 <a download> 与 openInBrowser 兜底。登录链路无改动，已无头 E2E 验证。"
 }
