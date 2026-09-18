@@ -1,5 +1,5 @@
 {
-  "version": "1.0.16",
+  "version": "1.0.17",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "修复 APP 打开白屏/加载超时（内置本地服务器 8080 起不来时回退 file:// 直读 assets + 健壮重试）；安装包 versionCode/versionName 同步关于页 1.0.16"
+  "note": "新增开屏动画（logo 呼吸 + 进度环 + 平滑淡出过渡到网页）；本地服务器健壮化 + file:// 兜底修复白屏；版本号同步 1.0.17"
 }
