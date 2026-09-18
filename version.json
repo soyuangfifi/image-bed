@@ -1,5 +1,5 @@
 {
-  "version": "1.0.23",
+  "version": "1.0.24",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.23 修复登录无法解锁：资产页下载按钮 onclick 内中文字符串单引号未转义，导致主 script 块整体 SyntaxError、整段脚本不执行（登录按钮从未接线）。已转义修复；同时回退 ghRepo 为 -image-bed，并新增构建期 JS 语法校验。"
+  "note": "v1.0.24 修复登录无法解锁（真正根因：资产页 onclick 内中文单引号未转义 → 主 script 块整体 SyntaxError → 登录按钮从未接线）。另在登录页新增独立 script 块的「下载最新版」入口，即使主脚本再出错也不会被彻底锁在登录页外。"
 }
