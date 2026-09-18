@@ -1,5 +1,5 @@
 {
-  "version": "1.0.19",
+  "version": "1.0.20",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "新增下载水印开关（superhuatie 水印，Canvas 绘制）；对话页可从资产选择图片；修复资产页图片下载（Canvas 水印 + 原生桥兜底）；版本号同步 1.0.19"
+  "note": "修复登录失败（crypto.subtle 在 127.0.0.1 非安全上下文不可用）：新增原生 sha256hex 桥兜底密码哈希；版本号同步 1.0.20"
 }
