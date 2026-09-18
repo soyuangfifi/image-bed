@@ -1,5 +1,5 @@
 {
-  "version": "1.0.17",
+  "version": "1.0.18",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "新增开屏动画（logo 呼吸 + 进度环 + 平滑淡出过渡到网页）；本地服务器健壮化 + file:// 兜底修复白屏；版本号同步 1.0.17"
+  "note": "修复对话页摄像机拍照（UID 权限错误）：改用 FileProvider 私有缓存文件，相机拍完稳定可读；版本号同步 1.0.18"
 }
