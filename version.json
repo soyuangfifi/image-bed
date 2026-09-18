@@ -1,5 +1,5 @@
 {
-  "version": "1.0.13",
+  "version": "1.0.14",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "修复底部导航\"点了没反应\"（通知层遮挡中间两个按键）+ 资产图片点击即放大查看（双击/双指缩放）"
+  "note": "恢复资产页图片全部原有功能（重绘/参考图/下载/链接/关键词/移动/删除）并放进放大层；原生层接管 JS confirm/prompt，删除等二次确认不再静默失效"
 }
