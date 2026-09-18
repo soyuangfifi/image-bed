@@ -1,5 +1,5 @@
 {
-  "version": "1.0.15",
+  "version": "1.0.16",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "对话页新增拍照上传（原生相机，AI 看图回答）；安装包版本号 versionCode/versionName 同步关于页 1.0.15"
+  "note": "修复 APP 打开白屏/加载超时（内置本地服务器 8080 起不来时回退 file:// 直读 assets + 健壮重试）；安装包 versionCode/versionName 同步关于页 1.0.16"
 }
