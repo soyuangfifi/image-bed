@@ -1,5 +1,5 @@
 {
-  "version": "1.0.27",
+  "version": "1.0.28",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.27 三项功能：①重绘纠正——资产卡片/预览页点「重绘」会带参考图+生成参数（比例/档位/模型）+文案一起回填到生成页；②改图——新增「改图」按钮，可红笔在图上涂抹标注要改区域，标注图+原图一起调图生图生成新图（支持涂抹/不涂抹）；③高清——新增「高清」按钮，图作参考图+超清增强文案+4K 档位调图生图。历史项新增 ref/ratio/size/model 字段。登录链路无改动，已无头 E2E 验证。"
+  "note": "v1.0.28 修复资产页图片加载不出来：①tab 切换 .hidden 类缺 display:none 兜底（Tailwind CDN 编译期该元素隐藏类未生成，切资产页 #mainHistory 显隐失效，lazy 图永不加载）→ 加 .hidden 原生 display:none 兜底；②资产图加占位 shimmer + 加载失败标记 + 重试按钮，破 jsDelivr 缓存污染（?t= 时间戳 + 旧 image-bed 域名自愈改写为 -image-bed）；③url 内单引号/尖括号转义防 onclick 拼成畸形 HTML。登录链路无改动，已无头 E2E 验证资产页出卡片+占位+失败兜底。"
 }
