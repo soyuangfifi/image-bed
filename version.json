@@ -1,5 +1,5 @@
 {
-  "version": "1.0.33",
+  "version": "1.0.34",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.33 根治改图「涂抹」完全无反应：涂色层 overlay/容器/canvas 三层 pointer-events:none 导致触摸事件穿透，根本画不了；canvas 未设尺寸 CSS width:auto 塌陷。现改为底图独立 <img>（不加 crossOrigin）+ 上层 canvas 只画红色笔迹（不含外来图→永不污染，导出必定成功），frame 设 pointer-events:auto 接收触摸，并加双指缩放/拖移、未涂抹提醒、每次打开复位。E2E 真实触摸验证：canvas pointer-events=auto、笔画 2119 像素、导出 4702B 成功、0 异常。aapt2 33/1.0.33。"
+  "note": "v1.0.34 页面切换更自然：①点底部导航按键时按方向播放左右滑入动效（向右切=内容从左滑入、向左切=从右滑入，.28s 缓动，尊重系统「减少动态效果」设置）；②内容区左右滑动可直接切换页面，手指拖动时页面实时跟手位移（阻尼 0.42），松手超过 68px 或快速轻扫（<320ms 且 >40px）即切换，不足则回弹复位；③已做纵向滚动保护（横滑判定需 |dx| > |dy|*1.3，纵向滑动绝不误触切页），输入框/选择器获得焦点时让位给文本操作。E2E 真实触摸验证：左滑 img→chat、右滑 chat→img、导航点击方向类名正确、纵向滑动不误触、0 异常。aapt2 34/1.0.34。"
 }
