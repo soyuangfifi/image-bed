@@ -1,5 +1,5 @@
 {
-  "version": "1.0.28",
+  "version": "1.0.29",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.28 修复资产页图片加载不出来：①tab 切换 .hidden 类缺 display:none 兜底（Tailwind CDN 编译期该元素隐藏类未生成，切资产页 #mainHistory 显隐失效，lazy 图永不加载）→ 加 .hidden 原生 display:none 兜底；②资产图加占位 shimmer + 加载失败标记 + 重试按钮，破 jsDelivr 缓存污染（?t= 时间戳 + 旧 image-bed 域名自愈改写为 -image-bed）；③url 内单引号/尖括号转义防 onclick 拼成畸形 HTML。登录链路无改动，已无头 E2E 验证资产页出卡片+占位+失败兜底。"
+  "note": "v1.0.29 修复 APP 内资产图下载跳到手机浏览器的问题：① 新增原生 AndroidUI.saveImageByUrl 桥（HttpURLConnection 下载 → MediaStore 写「相册/超级画贴」，免存储权限，SSRF 防护）+ pollSaveUrlResult / resetSaveUrlResult 轮询；② downloadWithWatermark 重写：无水印直走 saveImageByUrl（绕开 jsDelivr Content-Type=text/plain 导致的跨源 canvas 污染），水印开启走 canvas.toDataURL + saveImage，污染时回落 saveImageByUrl；③ 全程不再调 openInBrowser，纯网页才退 <a download>；#pvDownload 预览层下载同样改走原生桥。登录链路无改动，7 块内联 JS node --check 全过，aapt2 29/1.0.29 校验通过。"
 }
