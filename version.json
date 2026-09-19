@@ -1,5 +1,5 @@
 {
-  "version": "1.0.32",
+  "version": "1.0.33",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.32 改图「涂色标注」修复：涂色层双源加载（jsDelivr 图源无 CORS → 失败时自动从可信源 WorkBuddy sites 同名路径重载，不污染 canvas），完成标注时 canvas 被污染自动回落整图改；涂色面板新增双指缩放/拖移手势（单指画红框不受影响）。7 块内联 JS node --check 全过，aapt2 32/1.0.32 校验通过。"
+  "note": "v1.0.33 根治改图「涂抹」完全无反应：涂色层 overlay/容器/canvas 三层 pointer-events:none 导致触摸事件穿透，根本画不了；canvas 未设尺寸 CSS width:auto 塌陷。现改为底图独立 <img>（不加 crossOrigin）+ 上层 canvas 只画红色笔迹（不含外来图→永不污染，导出必定成功），frame 设 pointer-events:auto 接收触摸，并加双指缩放/拖移、未涂抹提醒、每次打开复位。E2E 真实触摸验证：canvas pointer-events=auto、笔画 2119 像素、导出 4702B 成功、0 异常。aapt2 33/1.0.33。"
 }
