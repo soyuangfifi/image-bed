@@ -1,5 +1,5 @@
 {
-  "version": "1.0.29",
+  "version": "1.0.30",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.29 修复 APP 内资产图下载跳到手机浏览器的问题：① 新增原生 AndroidUI.saveImageByUrl 桥（HttpURLConnection 下载 → MediaStore 写「相册/超级画贴」，免存储权限，SSRF 防护）+ pollSaveUrlResult / resetSaveUrlResult 轮询；② downloadWithWatermark 重写：无水印直走 saveImageByUrl（绕开 jsDelivr Content-Type=text/plain 导致的跨源 canvas 污染），水印开启走 canvas.toDataURL + saveImage，污染时回落 saveImageByUrl；③ 全程不再调 openInBrowser，纯网页才退 <a download>；#pvDownload 预览层下载同样改走原生桥。登录链路无改动，7 块内联 JS node --check 全过，aapt2 29/1.0.29 校验通过。"
+  "note": "v1.0.30 修复「改图」功能无法使用的问题：① 原生 prompt() 在部分 ROM 上 AlertDialog EditText 不渲染 → 换成自定义 DOM 弹窗 #modifyPromptModal（textarea + 涂色标注 checkbox）；② 移除不存在的 pvPaintToggle 检查（导致 paint overlay 初始化静默中止）；③ 涂色标注改为可选 checkbox 控制，勾选后显示 pvPaintOverlay，不勾选直接整图改。7 块内联 JS node --check 全过，aapt2 30/1.0.30 校验通过。"
 }
