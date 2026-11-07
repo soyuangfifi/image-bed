@@ -1,5 +1,5 @@
 {
-  "version": "1.0.46",
+  "version": "1.0.47",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.46 主要修复语音输入无法使用，并优化底部导航选中样式。① 【关键修复·语音识别】APK 端新增 AndroidVoice 原生桥 + RECORD_AUDIO 权限与运行时申请，走系统 SpeechRecognizer（zh-CN、流式 partial 结果），彻底解决「语音识别失败：not-allowed」；网页端在启动 Web Speech 前用 navigator.mediaDevices.getUserMedia 前置申请麦克风，并区分 not-allowed（请在地址栏允许麦克风）/ NotFound（无麦克风设备）错误提示，APK 与网页端均可正常语音输入。② 【导航栏选中高亮胶囊】选中态色块圆角改为 24px，与悬浮液态玻璃导航栏圆角一致（之前是近直角 16px 矩形），视觉更协调统一。③ 回归保留商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深动效、对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、WebView 缓存版本化、彩色元素液态玻璃。④ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 46/1.0.46、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；aapt2 46/1.0.46；网页版线上字节与源码一致（303349 B）。注意：项目没有后台服务器，网页版商汤生图需自行配置代理；APP 内走原生桥不受影响。"
+  "note": "v1.0.47 继续打磨底部导航选中高亮胶囊，与悬浮液态玻璃导航栏视觉统一。① 【导航栏选中胶囊圆角修复】浅色模式下胶囊圆角与原生液态玻璃导航栏脱节：根因是 24px 半径在 52×40px 小尺寸胶囊上被 CSS 钳成药丸形，而通栏导航栏 24px 只是轻微圆角矩形。改为 14px 后两主题下均为「轻微圆角矩形」，观感一致。② 【胶囊加高留空隙】胶囊由 52×40 增至 54×46，图标与文字四周留出约 6–8px 呼吸空隙，不再紧贴胶囊边缘；深/浅色主题共用同一圆角与尺寸。③ 回归保留：v1.0.46 的语音识别修复（APK 原生 AndroidVoice 桥 + RECORD_AUDIO 权限、网页端 getUserMedia 前置申请麦克风）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。④ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 47/1.0.47、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；aapt2 47/1.0.47；网页版线上字节与源码一致。注意：项目没有后台服务器，网页版商汤生图需自行配置代理；APP 内走原生桥不受影响。"
 }
