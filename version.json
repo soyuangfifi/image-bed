@@ -1,5 +1,5 @@
 {
-  "version": "1.0.50",
+  "version": "1.0.51",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.50 修复底部导航选中胶囊\"变成实心色块、且过高顶出\"的回归（v1.0.49 引入）。① 【根因】首段 <style> 里的旧规则 .mobile-nav-btn.active::before{background:currentColor} 被Tailwind Play CDN 在运行时重新注入到 head 末尾，以同优先级(无 !important)把新版液态玻璃胶囊的渐变背景覆盖成了纯 currentColor 实心块；深色模式下尤为明显。② 【修复】彻底删除该废弃旧规则（重注入副本同步消失），并给胶囊的 background/border/box-shadow全部加 !important，确保不被任何重注入规则覆盖；同时把胶囊高度从 calc(100% - 8px) 收紧为calc(100% - 16px)（上下各留 8px 呼吸空隙），胶囊明显小于 tab、四周留白、不再顶出导航栏。③ 抽屉菜单滚动条隐藏（v1.0.48）、语音识别（AndroidVoice 桥 + RECORD_AUDIO）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃均保留。④ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 50/1.0.50、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；网页版线上字节与源码一致。"
+  "note": "v1.0.51 微调底部导航选中胶囊高度（v1.0.50 的胶囊形态已正确，但偏矮、图标文字贴边）。① 把胶囊高度从 calc(100% - 16px) 调整为 calc(100% - 8px)：52px 按钮里约 44px 高，图标文字在胶囊内上下各留约 5px 内边距、不再贴边，同时胶囊仍明显小于 tab、不溢出导航栏。② 保留：v1.0.50 的「删除被 Tailwind 重注入的旧 background:currentColor 规则 + 胶囊背景/边框/阴影加 !important」（实心色块回归修复）、v1.0.48 抽屉滚动条隐藏、v1.0.46 语音识别（AndroidVoice 桥 + RECORD_AUDIO）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。③ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 51/1.0.51、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；网页版线上字节与源码一致。"
 }
