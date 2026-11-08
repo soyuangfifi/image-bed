@@ -1,5 +1,5 @@
 {
-  "version": "1.0.52",
+  "version": "1.0.53",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.52 全部「实心青」按钮统一为液态玻璃。① 把 14 个实心亮青按钮（登录「进入」、生成页「生成图片」、资产空态「去生成」、对话发送、搜索、各弹窗确认、关于页/登录页「网页版」、回到顶部等）从实心饱和青渐变 + 深色字，统一改为半透明淡青玻璃（rgba(0,212,224,.32)→rgba(0,140,160,.12) 渐变、blur(12px)、1px rgba(120,240,250,.52) 细边框、青色文字 #a5fbff），与「检查更新」等淡青元素质感一致。② 补浅色模式适配（深青字 #0e7490 + 更淡青玻璃）；③ 旧 WebView 降级从不支持 backdrop-filter 时，这些按钮从实心 #0aa9b8 改为半透明 rgba(0,150,165,.44)。④ 保留：v1.0.50/51 导航胶囊液态玻璃、v1.0.46 语音识别（AndroidVoice 桥 + RECORD_AUDIO）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹。⑤ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 52/1.0.52、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；网页版线上字节与源码一致。"
+  "note": "v1.0.53 生成页界面优化：主 CTA「生成图片」宽度修复 + 视觉突出。① 修复主 CTA 宽度 bug——「生成图片」按钮原本 CSS 写的是 display:flex + width:100%，但该规则所在 style 块被 Tailwind Play CDN 重注入机制挤掉、未进 CSSOM，导致按钮退化成浏览器默认 inline-block、宽仅 81px 的靠左小胶囊，和风格标签抢视觉。现把 display/width/尺寸修复加到确定生效的 __final_glass__ 块（ID 特异性 #generateTxt2Img.gen-main-btn + !important），按钮恢复撑满整张卡片。② 主 CTA 视觉突出：浅色模式用饱和青渐变（#06b6d4→#0891b2）+ 白字 + 青色投影，成为页面唯一主行动点；深色模式用略提亮的淡青玻璃 + 亮青字。③ 理顺层次：工具条 chip（参考图/页面搜索/参数）加高到 44px、字号 13px；风格标签（风景/科幻/动漫…）加高到 38px、圆角 12px、字号 13px。④ 保留：v1.0.52 全部实心青按钮液态玻璃、v1.0.50/51 导航胶囊、v1.0.46 语音识别（AndroidVoice 桥 + RECORD_AUDIO）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹。⑤ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 53/1.0.53、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；网页版线上字节与源码一致。"
 }
