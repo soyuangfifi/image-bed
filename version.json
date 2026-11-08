@@ -1,5 +1,5 @@
 {
-  "version": "1.0.47",
+  "version": "1.0.48",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.47 继续打磨底部导航选中高亮胶囊，与悬浮液态玻璃导航栏视觉统一。① 【导航栏选中胶囊圆角修复】浅色模式下胶囊圆角与原生液态玻璃导航栏脱节：根因是 24px 半径在 52×40px 小尺寸胶囊上被 CSS 钳成药丸形，而通栏导航栏 24px 只是轻微圆角矩形。改为 14px 后两主题下均为「轻微圆角矩形」，观感一致。② 【胶囊加高留空隙】胶囊由 52×40 增至 54×46，图标与文字四周留出约 6–8px 呼吸空隙，不再紧贴胶囊边缘；深/浅色主题共用同一圆角与尺寸。③ 回归保留：v1.0.46 的语音识别修复（APK 原生 AndroidVoice 桥 + RECORD_AUDIO 权限、网页端 getUserMedia 前置申请麦克风）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。④ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 47/1.0.47、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；aapt2 47/1.0.47；网页版线上字节与源码一致。注意：项目没有后台服务器，网页版商汤生图需自行配置代理；APP 内走原生桥不受影响。"
+  "note": "v1.0.48 修复 APP / 网页端左侧抽屉菜单右侧多余的滚动条。① 【抽屉菜单滚动条】左侧抽屉 `.mobile-drawer-nav` 此前只设 `overflow-y:auto` 未隐藏滚动条，桌面浏览器与部分 WebView 下会露出右侧滚动条；现复用 `.scrollbar-hide` 工具类（与桌面端侧边栏 `#sidebar` 一致），视觉隐藏滚动条但保留滚动能力，菜单不再出现下拉条。② 回归保留：v1.0.47 的导航选中胶囊 14px 轻微圆角矩形 + 54×46 加高留空隙、v1.0.46 的语音识别修复（APK 原生 AndroidVoice 桥 + RECORD_AUDIO 权限、网页端 getUserMedia 前置申请麦克风）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。③ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 48/1.0.48、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；aapt2 48/1.0.48；网页版线上字节与源码一致。注意：项目没有后台服务器，网页版商汤生图需自行配置代理；APP 内走原生桥不受影响。"
 }
