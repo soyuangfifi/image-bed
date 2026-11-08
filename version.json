@@ -1,5 +1,5 @@
 {
-  "version": "1.0.48",
+  "version": "1.0.49",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.48 修复 APP / 网页端左侧抽屉菜单右侧多余的滚动条。① 【抽屉菜单滚动条】左侧抽屉 `.mobile-drawer-nav` 此前只设 `overflow-y:auto` 未隐藏滚动条，桌面浏览器与部分 WebView 下会露出右侧滚动条；现复用 `.scrollbar-hide` 工具类（与桌面端侧边栏 `#sidebar` 一致），视觉隐藏滚动条但保留滚动能力，菜单不再出现下拉条。② 回归保留：v1.0.47 的导航选中胶囊 14px 轻微圆角矩形 + 54×46 加高留空隙、v1.0.46 的语音识别修复（APK 原生 AndroidVoice 桥 + RECORD_AUDIO 权限、网页端 getUserMedia 前置申请麦克风）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。③ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 48/1.0.48、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；aapt2 48/1.0.48；网页版线上字节与源码一致。注意：项目没有后台服务器，网页版商汤生图需自行配置代理；APP 内走原生桥不受影响。"
+  "note": "v1.0.49 修复底部导航选中胶囊\"色块顶出导航栏\"的回归。① 【选中胶囊溢出修复】v1.0.47 把胶囊改成固定 46px 高，比实际按钮还高，导致高亮色块从导航栏底部/边缘顶出去；现改为相对按钮尺寸（height: calc(100% - 8px) 居中、width 54px 且 max-width 比按钮小 6px），无论屏幕/按钮多高多窄，胶囊永远贴合在按钮内、不再溢出导航栏，图标文字四周仍留呼吸空隙。② 回归保留：v1.0.48 的抽屉菜单滚动条隐藏、v1.0.47 的导航胶囊 14px 轻微圆角矩形、v1.0.46 的语音识别修复（APK 原生 AndroidVoice 桥 + RECORD_AUDIO 权限、网页端 getUserMedia 前置申请麦克风）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。③ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 49/1.0.49、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；aapt2 49/1.0.49；网页版线上字节与源码一致。"
 }
