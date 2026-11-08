@@ -1,5 +1,5 @@
 {
-  "version": "1.0.51",
+  "version": "1.0.52",
   "downloadUrl": "https://raw.githubusercontent.com/soyuangfifi/image-bed/main/superhuatie-latest.apk",
-  "note": "v1.0.51 微调底部导航选中胶囊高度（v1.0.50 的胶囊形态已正确，但偏矮、图标文字贴边）。① 把胶囊高度从 calc(100% - 16px) 调整为 calc(100% - 8px)：52px 按钮里约 44px 高，图标文字在胶囊内上下各留约 5px 内边距、不再贴边，同时胶囊仍明显小于 tab、不溢出导航栏。② 保留：v1.0.50 的「删除被 Tailwind 重注入的旧 background:currentColor 规则 + 胶囊背景/边框/阴影加 !important」（实心色块回归修复）、v1.0.48 抽屉滚动条隐藏、v1.0.46 语音识别（AndroidVoice 桥 + RECORD_AUDIO）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹、彩色元素液态玻璃。③ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 51/1.0.51、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；网页版线上字节与源码一致。"
+  "note": "v1.0.52 全部「实心青」按钮统一为液态玻璃。① 把 14 个实心亮青按钮（登录「进入」、生成页「生成图片」、资产空态「去生成」、对话发送、搜索、各弹窗确认、关于页/登录页「网页版」、回到顶部等）从实心饱和青渐变 + 深色字，统一改为半透明淡青玻璃（rgba(0,212,224,.32)→rgba(0,140,160,.12) 渐变、blur(12px)、1px rgba(120,240,250,.52) 细边框、青色文字 #a5fbff），与「检查更新」等淡青元素质感一致。② 补浅色模式适配（深青字 #0e7490 + 更淡青玻璃）；③ 旧 WebView 降级从不支持 backdrop-filter 时，这些按钮从实心 #0aa9b8 改为半透明 rgba(0,150,165,.44)。④ 保留：v1.0.50/51 导航胶囊液态玻璃、v1.0.46 语音识别（AndroidVoice 桥 + RECORD_AUDIO）、商汤双模型 + AES-256-GCM/PBKDF2 密钥混淆、层叠景深与对话页呼吸动效、localStorage 配额四级降级、左右滑页与右回弹。⑤ 验证：内联脚本语法门禁 8 块 0 错；APK 包内版本 52/1.0.52、含 RECORD_AUDIO 权限、dex 含 AndroidVoiceBridge/beginVoice/voiceEscape；网页版线上字节与源码一致。"
 }
